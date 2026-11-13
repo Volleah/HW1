@@ -4,13 +4,20 @@ public class Assignment01Q02 {
         double approxPi = 0;
 
         /////////////////////////////////////////////
-        // TODO: Fill in the Pi approxiamtion here
-        /////////////////////////////////////////////
-        /// ...
-        
-        
+        int summands=Integer.parseInt(args[0]);
+        for (double i=0;i<summands;i++) {
+            double curr = 1/(1+(i*2));
+            if (i%2==0){
+                approxPi+=curr;
+            }
+            else{
+                approxPi-=curr;
+            }
+        }
+        approxPi*=4;
         /////////////////////////////////////////////
         
         System.out.println(approxPi + " " + actualPi);
     }
 }
+
