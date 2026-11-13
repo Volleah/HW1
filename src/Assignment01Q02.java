@@ -7,12 +7,10 @@ public class Assignment01Q02 {
         int summands=Integer.parseInt(args[0]);
         for (double i=0;i<summands;i++) {
             double curr = 1/(1+(i*2));
-            if (i%2==0){
+            if (i%2==0)
                 approxPi+=curr;
-            }
-            else{
+            else
                 approxPi-=curr;
-            }
         }
         approxPi*=4;
         /////////////////////////////////////////////
